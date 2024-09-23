@@ -36,5 +36,10 @@ while True:
         print("you got it")
         break
     else:
-        print("you got it wrong")            
+        #checks whether the user was greater or lower than the number
+        if user_guess > random_number:
+            print("you were above the number")
+        else:
+            print("You were below the number")    
+        # print("you got it wrong")            
 print("you got it in" ,guesses ,"guesses")        
