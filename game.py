@@ -18,8 +18,13 @@ else:
 random_number = random.randint(0, top_range)
 # print(random_number)
 
+#how many times a user makes a guess
+guesses = 0
+
 
 while True:
+    #every time a user makes a guess(start the loop) we increment +=1
+    guesses +=1
     user_guess =input("make a guess: ")
     if user_guess.isdigit():
         user_guess=int(user_guess)
@@ -31,6 +36,5 @@ while True:
         print("you got it")
         break
     else:
-        print("you got it wrong")    
-        
-        
+        print("you got it wrong")            
+print("you got it in" ,guesses ,"guesses")        
